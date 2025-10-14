@@ -28,7 +28,7 @@ public class MiinventarioApplication implements CommandLineRunner {
     public void run(String... args) throws Exception {
         System.out.println("\n--- CRUD BÁSICO PRODUCTO---");
         // CREATE
-        System.out.println("1. Creando y guardando un producto inicial...");
+        System.out.println("1. Creando y guardando un producto inicial....");
         Producto productoInicial = new Producto("Teclado4", 340);
         productoRepository.save(productoInicial);
         System.out.println("Producto guardado: " + productoInicial.getNombre());
