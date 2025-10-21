@@ -27,25 +27,7 @@ public class MiinventarioApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         System.out.println("\n--- CRUD BÁSICO PRODUCTO---");
-        // CREATE
-        System.out.println("1. Creando y guardando un producto inicial....");
-        Producto productoInicial = new Producto("Teclado4", 340);
-        productoRepository.save(productoInicial);
-        System.out.println("Producto guardado: " + productoInicial.getNombre());
-        // READ
-        System.out.println("\n2. Leyendo todos los productos...");
-        productoRepository.findAll().forEach(p -> System.out.println("-> " + p.getNombre()));
-        // UPDATE
-        System.out.println("\n3. Actualizando el producto...");
-        productoInicial.setPrecio(380000);
-        productoRepository.save(productoInicial);
-        System.out.println("Producto actualizado: " + productoInicial);
-/*         // DELETE
-        System.out.println("\n4. Borrando el producto...");
-        productoRepository.deleteById(productoInicial.getId());
-        System.out.println("Producto borrado. Productos restantes: " + productoRepository.count()); */
-    
-    
+
      System.out.println("\n--- CRUD BÁSICO CATEGORIA ---");
         // CREATE
         System.out.println("1. Creando y guardando una categoria ...");
